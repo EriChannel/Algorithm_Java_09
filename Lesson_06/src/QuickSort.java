@@ -4,7 +4,8 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] arr= {25, 3, 40, 17, 20,19, 8};
 
-        quickSort(arr, 0, arr.length-1);
+        //quickSort(arr, 0, arr.length-1);
+        Arrays.sort(arr);
 
         System.out.println(Arrays.toString(arr));
     }
