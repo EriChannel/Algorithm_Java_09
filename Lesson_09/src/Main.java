@@ -1,5 +1,9 @@
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
+
+        //LinkedList
         Node n1 = new Node(1);
         Node n2 = new Node(2);
         Node n3 = new Node(3);
@@ -26,6 +30,15 @@ public class Main {
         print(n1);
 
         n1 = addToIndex(n1, 6, 10);
+        print(n1);
+
+        n1 = removeAtHead(n1);
+        print(n1);
+
+        n1 = removeAtTail(n1);
+        print(n1);
+
+        n1 = removeAtIndex(n1, 2);
         print(n1);
     }
 
@@ -91,6 +104,68 @@ public class Main {
 
                 temp = temp.next;
             }
+        }
+
+        return headNode;
+    }
+
+    //Xóa node đầu
+    public static Node removeAtHead(Node headNode){
+        if(headNode != null){
+            headNode = headNode.next;
+        }
+        return headNode;
+    }
+
+    //Xóa node cuối
+    public static Node removeAtTail(Node headNode){
+        if(headNode == null){
+            return null;
+        }
+
+        Node lastNode = headNode;
+        Node preNode = null;
+
+        while(lastNode.next != null){
+            preNode = lastNode;
+            lastNode = preNode.next;
+        }
+
+        if (preNode == null){
+            return null;
+        }else {
+            preNode.next = lastNode.next;
+        }
+
+
+        return headNode;
+    }
+
+    //Xóa node ở index chỉ định
+
+    public static Node removeAtIndex(Node headNode, int index){
+        if(headNode == null){
+            return null;
+        }
+
+        if(index == 0){
+            return removeAtHead(headNode);
+        }
+
+        Node temp = headNode;
+        Node preNode = null;
+
+        int count = 0;
+
+        while (temp != null){
+            if(count == index){
+                preNode.next = temp.next;
+                break;
+            }
+
+            count++;
+            preNode = temp;
+            temp = preNode.next;
         }
 
         return headNode;
