@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        /*ArrayStack myStack = new ArrayStack(5);
+        ArrayStack myStack = new ArrayStack(5);
 
         System.out.println(myStack.isEmpty());
         System.out.println(myStack.isFull());
@@ -17,12 +17,15 @@ public class Main {
 
         myStack.print();
 
-        System.out.println("Kiểm tra rỗng: "+myStack.isEmpty());
-        System.out.println("Kiểm tra full: " +myStack.isFull());
+//        System.out.println("Kiểm tra rỗng: "+myStack.isEmpty());
+//        System.out.println("Kiểm tra full: " +myStack.isFull());
+//
+//        System.out.println(myStack.push(6));
 
-        System.out.println(myStack.push(6));
+        System.out.println("Phần tử đầu tiên: " + myStack.peek());
 
         System.out.println(myStack.pop());
+        System.out.println("Phần tử đầu tiên: " + myStack.peek());
 
         myStack.print();
 
@@ -33,7 +36,7 @@ public class Main {
         System.out.println(myStack.pop());
         System.out.println(myStack.pop());
         System.out.println(myStack.pop());
-        System.out.println(myStack.pop());*/
+        System.out.println(myStack.pop());
 
         /*
         LinkedListStack stack = new LinkedListStack();
@@ -77,6 +80,7 @@ public class Main {
 
          */
 
+        /*
         LinkedListQueue queue = new LinkedListQueue();
         System.out.println(queue.isEmpty());
         System.out.println(queue.isFull());
@@ -93,6 +97,6 @@ public class Main {
         System.out.println(queue.pop());
         System.out.println(queue.pop());
 
-        System.out.println("Queue rỗng : " + queue.isEmpty());
+        System.out.println("Queue rỗng : " + queue.isEmpty());*/
     }
 }

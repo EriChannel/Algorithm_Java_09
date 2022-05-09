@@ -48,6 +48,14 @@ public class ArrayStack implements IStackQueue {
     }
 
     @Override
+    public int peek() {
+        if(isEmpty()){
+            return -1;
+        }
+        return arr[topIndex];
+    }
+
+    @Override
     public void print(){
         if(isEmpty()){
             System.out.println("Stack rỗng");

@@ -40,6 +40,11 @@ public class ArrayQueue implements  IStackQueue {
     }
 
     @Override
+    public int peek() {
+        return 0;
+    }
+
+    @Override
     public boolean isFull() {
         return tail == size - 1;
     }

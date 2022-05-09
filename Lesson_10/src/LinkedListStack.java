@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class LinkedListStack implements IStackQueue{
 
+
     Node topNode;
 
     public LinkedListStack() {
@@ -29,6 +30,11 @@ public class LinkedListStack implements IStackQueue{
             topNode = topNode.next;
             return value;
         }
+    }
+
+    @Override
+    public int peek() {
+        return 0;
     }
 
     @Override

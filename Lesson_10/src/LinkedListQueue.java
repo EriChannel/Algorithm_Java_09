@@ -40,6 +40,11 @@ public class LinkedListQueue implements IStackQueue {
     }
 
     @Override
+    public int peek() {
+        return 0;
+    }
+
+    @Override
     public boolean isFull() {
         return false;
     }
