@@ -35,6 +35,7 @@ public class Main {
         System.out.println(myStack.pop());
         System.out.println(myStack.pop());*/
 
+        /*
         LinkedListStack stack = new LinkedListStack();
         System.out.println(stack.isEmpty());
 
@@ -49,6 +50,28 @@ public class Main {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
+        */
 
+        ArrayQueue queue = new ArrayQueue(5);
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.isFull());
+
+        System.out.println(queue.push(1));
+        System.out.println(queue.push(2));
+        System.out.println(queue.push(3));
+        System.out.println(queue.push(4));
+        System.out.println(queue.push(5));
+
+        queue.print();
+
+        System.out.println("Queue đầy: "+queue.isFull());
+
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+
+        System.out.println("Queue rỗng: " +queue.isEmpty());
     }
 }
