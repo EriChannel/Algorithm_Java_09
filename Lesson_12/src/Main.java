@@ -13,11 +13,13 @@ public class Main {
         TreeNode n14 = new TreeNode(14);
         TreeNode n11 = new TreeNode(11);
         TreeNode n10 = new TreeNode(10);
+        TreeNode n5 = new TreeNode(5);
 
         System.out.println("BST");
         n8.left = n6;
         n8.right = n12;
 
+        n6.left = n5;
         n6.right = n7;
 
         n12.left = n9;
@@ -27,13 +29,18 @@ public class Main {
         n11.left = n10;
 
         n15.left = n14;
-
         MyBinarySearchTree bst = new MyBinarySearchTree();
-        bst.insert(n8, 10);
-        System.out.println("Done");
+//        bst.insert(n8, 10);
+//        System.out.println("Done");
 
-        bst.remove(n8, 11);
-        System.out.println("Done");
+//        bst.remove(n8, 11);
+//        System.out.println("Done");
+
+        bst.preOrder(n8);
+        System.out.println();
+        bst.inOrder(n8);
+        System.out.println();
+        bst.postOrder(n8);
 
     }
 }

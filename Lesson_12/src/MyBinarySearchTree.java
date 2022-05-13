@@ -80,4 +80,45 @@ public class MyBinarySearchTree {
 
         return temp;
     }
+
+    //Duyệt tiền thứ tự
+    public void preOrder(TreeNode root){
+        if(root == null){
+            return;
+        }
+        //Duyệt gốc
+        System.out.print(root.value + "\t");
+        //Duyệt bên trái
+        preOrder(root.left);
+        //Duyệt bên phải
+        preOrder(root.right);
+    }
+
+    //Duyệt trung thứ tự
+    public void inOrder(TreeNode root){
+        if(root == null){
+            return;
+        }
+
+        //Duyệt bên trái
+        inOrder(root.left);
+        //Duyệt gốc
+        System.out.print(root.value +"\t");
+        //Duyệt bên phải
+        inOrder(root.right);
+    }
+
+    //Duyệt hậu thứ tự
+    public void postOrder(TreeNode root){
+        if(root == null){
+            return;
+        }
+
+        //Duyệt bên trái
+        postOrder(root.left);
+        //Duyệt bên phải
+        postOrder(root.right);
+        //Duyệt gốc
+        System.out.print(root.value +"\t");
+    }
 }
