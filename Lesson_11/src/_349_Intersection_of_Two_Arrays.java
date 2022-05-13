@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -76,5 +77,6 @@ public class _349_Intersection_of_Two_Arrays {
         }
 
         return rs;
+
     }
 }
