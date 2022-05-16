@@ -14,6 +14,8 @@ public class BFSWithQueue {
                 {0,0,1,0,1,0}
         };
 
+        //System.out.println(graph.length + " - " + graph[0].length);
+
         Queue<Integer> queue = new LinkedList<>();
         Set<Integer> set = new HashSet<>();
 
